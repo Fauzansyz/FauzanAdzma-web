@@ -1,15 +1,23 @@
 import './App.css'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
+import { useRef } from 'react'
 import Projects from '@/components/Projects'
+import SkillStack from '@/components/SkillStack'
 
 function App() {
+  const ref = useRef(null)
   return (
     <>
-      <Navbar />
+      <Navbar onScroll={() => ref.current?.scrollIntoView({ behavior: 'smooth' })} />
       <div className="h-full w-full">
-        <Hero />
-        <Projects />
+        <Hero onScroll={() => ref.current?.scrollIntoView({ behavior: 'smooth' })} />
+        <div ref={ref} >
+          <Projects />
+          <div className='mx-auto max-w-6xl px-8 py-24'>
+            <SkillStack />
+          </div>
+        </div>
       </div>
     </>
   )

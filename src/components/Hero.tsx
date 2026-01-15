@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+
 import { Github } from "lucide-react"
 
-export default function Hero() {
+export default function Hero({ onScroll }) {
+
   return (
     <section className="relative flex min-h-screen items-center justify-center px-4">
       <div className="max-w-3xl text-center">
@@ -22,10 +24,12 @@ export default function Hero() {
         </p>
 
         <div className="flex justify-center gap-4">
-          <Button size="lg">Lihat Project</Button>
+          <Button onClick={onScroll} size="lg">Lihat Project</Button>
           <Button variant="outline" size="lg">
-            <a href="https://github.com/Fauzansyz" target="_blank" />
-            <Github className="mr-2 h-2 w-2" />
+            <a href="https://github.com/Fauzansyz" target="_blank" >
+              <Github className="mr-2 h-2 w-2" />
+
+            </a>
             GitHub
           </Button>
         </div>
