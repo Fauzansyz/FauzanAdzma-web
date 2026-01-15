@@ -24,6 +24,7 @@ export default function Hero() {
         <div className="flex justify-center gap-4">
           <Button size="lg">Lihat Project</Button>
           <Button variant="outline" size="lg">
+            <a href="https://github.com/Fauzansyz" target="_blank" />
             <Github className="mr-2 h-2 w-2" />
             GitHub
           </Button>
