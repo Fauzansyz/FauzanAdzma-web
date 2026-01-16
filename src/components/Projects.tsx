@@ -41,8 +41,7 @@ export default function Projects() {
           Projects
         </h2>
         <p className="mt-2 text-muted-foreground">
-          Beberapa project yang pernah saya bangun — fokus ke clean code,
-          performa, dan UX.
+          Some of the projects I have built that focus on performance and presenting UI/UX for users
         </p>
       </div>
 
