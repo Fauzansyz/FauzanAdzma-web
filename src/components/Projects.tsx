@@ -35,6 +35,7 @@ export default function Projects() {
       className="mx-auto max-w-6xl px-8 py-24"
     >
       {/* Header */}
+
       <div className="mb-12 max-w-2xl">
         <h2 className="text-3xl font-bold tracking-tight">
           Projects
