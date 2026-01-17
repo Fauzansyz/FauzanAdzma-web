@@ -31,7 +31,7 @@ const journeys = [
   {
     year: "Now",
     title: "Growing",
-    desc: "Eksplor UI system, component reusable, dan performa. Pelan tapi jalan.",
+    desc: "Currently studying mobile/android application development architecture and learning other low-level languages",
   },
 ]
 
@@ -48,54 +48,82 @@ export default function JourneyPage() {
   return (
     <section
       ref={ref}
-      className="relative mx-auto max-w-3xl px-4 py-20"
+      className="relative mx-auto max-w-4xl px-4 py-24"
     >
       {/* Header */}
-      <div className="mb-14 text-center">
-        <h2 className="text-3xl font-bold">My Journey</h2>
+      <div className="mb-16 text-center">
+        <h2 className="text-3xl font-bold">Journey</h2>
         <p className="mt-2 text-muted-foreground">
-          Pelan, konsisten, dan nyata.
+          pelan, konsisten, dan berdarah-darah dikit
         </p>
       </div>
 
-      {/* Static line */}
-      <div className="absolute left-6 top-32 h-[calc(100%-8rem)] w-px bg-zinc-200 dark:bg-zinc-800" />
+      {/* Timeline line (static) */}
+      <div className="absolute left-5 md:left-1/2 top-40 h-[calc(100%-10rem)] w-px bg-zinc-200 dark:bg-zinc-800" />
 
-      {/* Animated line */}
+      {/* Timeline line (animated) */}
       <motion.div
         style={{ height: lineHeight }}
-        className="absolute left-6 top-32 w-px origin-top bg-zinc-900 dark:bg-zinc-100"
+        className="absolute left-5 md:left-1/2 top-40 w-px origin-top bg-zinc-900 dark:bg-zinc-100"
       />
 
-      {/* Items */}
-      <div className="space-y-14">
-        {journeys.map((item, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="relative ml-14"
-          >
-            {/* Dot */}
-            <span className="absolute -left-[34px] top-2 h-3 w-3 rounded-full bg-zinc-900 dark:bg-zinc-100" />
+      <div className="space-y-20">
+        {journeys.map((item, index) => {
+          const start = index / journeys.length
+          const end = (index + 1) / journeys.length
 
-            {/* Card */}
-            <div className="rounded-xl border border-zinc-200 bg-white p-4 shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
-              <span className="text-sm text-muted-foreground">
-                {item.year}
-              </span>
-              <h3 className="mt-1 text-lg font-semibold">
-                {item.title}
-              </h3>
-              <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                {item.desc}
-              </p>
+          const glow = useTransform(
+            scrollYProgress,
+            [start, end],
+            [0, 1]
+
+          )
+
+          const glowShadow = useTransform(
+            glow,
+            (v) => `0 0 ${v * 20}px rgba(24,24,27,0.6)`
+          )
+
+          return (
+            <div
+              key={index}
+              className={`relative flex ${index % 2 === 0
+                ? "md:flex-row-reverse"
+                : "md:flex-row"
+                } items-start gap-8`}
+            >
+              {/* Dot */}
+              <motion.span
+                style={{
+                  scale: glow,
+                  boxShadow: glowShadow,
+                }}
+                className="absolute left-5 md:left-1/2 top-1 h-3 w-3 -translate-x-1/2 rounded-full bg-zinc-900 dark:bg-zinc-100"
+              />
+
+              {/* Card */}
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="ml-10 md:ml-0 md:w-[calc(50%-3rem)] rounded-xl border border-zinc-200 bg-white p-5 shadow-sm dark:border-zinc-800 dark:bg-zinc-900"
+              >
+                <span className="text-sm text-muted-foreground">
+                  {item.year}
+                </span>
+                <h3 className="mt-1 text-lg font-semibold">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                  {item.desc}
+                </p>
+              </motion.div>
             </div>
-          </motion.div>
-        ))}
+          )
+        })}
       </div>
     </section>
   )
+
 }
