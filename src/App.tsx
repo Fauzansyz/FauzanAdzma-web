@@ -7,19 +7,20 @@ import SkillStack from '@/components/SkillStack'
 import JourneyPage from '@/components/JourneyPage'
 
 function App() {
-  const ref = useRef(null)
+  const projectRef = useRef(null)
   return (
     <>
-      <Navbar onScroll={() => ref.current?.scrollIntoView({ behavior: 'smooth' })} />
+      <Navbar onScroll={() => projectRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })} />
       <div className="h-full w-full">
-        <Hero onScroll={() => ref.current?.scrollIntoView({ behavior: 'smooth' })} />
-        <div ref={ref} >
-          <Projects />
-          <div className='mx-auto max-w-6xl px-8 py-24'>
-            <SkillStack />
-          </div>
-          <JourneyPage />
+        <Hero onScroll={() => projectRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })} />
+
+        <div className='mx-auto max-w-6xl px-8 py-24'>
+          <SkillStack />
         </div>
+
+        <Projects ref={projectRef} />
+        <JourneyPage />
+
       </div>
     </>
   )

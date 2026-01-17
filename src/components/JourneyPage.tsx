@@ -54,7 +54,7 @@ export default function JourneyPage() {
       <div className="mb-16 text-center">
         <h2 className="text-3xl font-bold">Journey</h2>
         <p className="mt-2 text-muted-foreground">
-          pelan, konsisten, dan berdarah-darah dikit
+          Slowly but surely
         </p>
       </div>
 

@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Github, ExternalLink } from "lucide-react"
+import { fordwardRef, forwardRef } from "react"
 
 const projects = [
   {
@@ -28,10 +29,12 @@ const projects = [
   },
 ]
 
-export default function Projects() {
+const Projects = forwardRef(function Projects(_, ref) {
+
   return (
     <section
       id="projects"
+      ref={ref}
       className="mx-auto max-w-6xl px-8 py-24"
     >
       {/* Header */}
@@ -109,4 +112,6 @@ export default function Projects() {
       </div>
     </section>
   )
-}
+})
+
+export default Projects;
