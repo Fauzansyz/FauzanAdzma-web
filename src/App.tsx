@@ -5,6 +5,7 @@ import { useRef } from 'react'
 import Projects from '@/components/Projects'
 import SkillStack from '@/components/SkillStack'
 import JourneyPage from '@/components/JourneyPage'
+import AboutPage from '@/components/AboutPage'
 
 function App() {
   const projectRef = useRef(null)
@@ -13,13 +14,12 @@ function App() {
       <Navbar onScroll={() => projectRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })} />
       <div className="h-full w-full">
         <Hero onScroll={() => projectRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })} />
-
         <div className='mx-auto max-w-6xl px-8 py-24'>
           <SkillStack />
         </div>
-
-        <Projects ref={projectRef} />
+        <AboutPage />
         <JourneyPage />
+        <Projects ref={projectRef} />
 
       </div>
     </>

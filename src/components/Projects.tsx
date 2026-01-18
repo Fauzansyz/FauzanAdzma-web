@@ -35,7 +35,7 @@ const Projects = forwardRef(function Projects(_, ref) {
     <section
       id="projects"
       ref={ref}
-      className="mx-auto max-w-6xl px-8 py-24"
+      className="mx-auto max-w-6xl px-8 md:px-12 py-24"
     >
       {/* Header */}
 

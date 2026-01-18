@@ -58,16 +58,17 @@ export default function JourneyPage() {
         </p>
       </div>
 
-      {/* Timeline line (static) */}
-      <div className="absolute left-5 md:left-1/2 top-40 h-[calc(100%-10rem)] w-px bg-zinc-200 dark:bg-zinc-800" />
+      <div className="relative space-y-20">
 
-      {/* Timeline line (animated) */}
-      <motion.div
-        style={{ height: lineHeight }}
-        className="absolute left-5 md:left-1/2 top-40 w-px origin-top bg-zinc-900 dark:bg-zinc-100"
-      />
+        {/* Timeline line (static) */}
+        <div className="absolute left-5 md:left-1/2 top-0 h-full w-px bg-zinc-200 dark:bg-zinc-800" />
 
-      <div className="space-y-20">
+        {/* Timeline line (animated) */}
+        <motion.div
+          style={{ height: lineHeight }}
+          className="absolute left-5 md:left-1/2 top-0 w-px origin-top bg-zinc-900 dark:bg-zinc-100"
+        />
+
         {journeys.map((item, index) => {
           const start = index / journeys.length
           const end = (index + 1) / journeys.length
@@ -92,13 +93,9 @@ export default function JourneyPage() {
                 : "md:flex-row"
                 } items-start gap-8`}
             >
-              {/* Dot */}
               <motion.span
-                style={{
-                  scale: glow,
-                  boxShadow: glowShadow,
-                }}
-                className="absolute left-5 md:left-1/2 top-1 h-3 w-3 -translate-x-1/2 rounded-full bg-zinc-900 dark:bg-zinc-100"
+                className="absolute left-5 md:left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2
+               h-3 w-3 rounded-full bg-zinc-900 dark:bg-zinc-100"
               />
 
               {/* Card */}
