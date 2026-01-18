@@ -6,6 +6,7 @@ import Projects from '@/components/Projects'
 import SkillStack from '@/components/SkillStack'
 import JourneyPage from '@/components/JourneyPage'
 import AboutPage from '@/components/AboutPage'
+import ContactSection from './components/ContactSection'
 
 function App() {
   const projectRef = useRef(null)
@@ -20,7 +21,7 @@ function App() {
         <AboutPage />
         <JourneyPage />
         <Projects ref={projectRef} />
-
+        <ContactSection />
       </div>
     </>
   )
