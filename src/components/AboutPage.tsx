@@ -13,9 +13,7 @@ export default function AboutPage() {
         </p>
 
         <p>
-          Gue suka hal-hal yang rapi, jelas, dan gak ribet — baik di
-          kode maupun di UI. Sekarang lagi fokus ngembangin skill di
-          React, Tailwind, dan ekosistem modern web.</p>
+          I prefer to prioritize the functionality and scalability of applications that can be useful for the development of applications that I work on in the future. </p>
 
         <p className="font-medium text-zinc-800 dark:text-zinc-200">
           consistency is the key, because everything starts with determination and the will to do it.
