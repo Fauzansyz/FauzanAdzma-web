@@ -39,7 +39,7 @@ const Projects = forwardRef(function Projects(_, ref) {
     >
       {/* Header */}
 
-      <div className="mb-12 max-w-2xl">
+      <div className="mb-12 md:text-center md:w-full">
         <h2 className="text-3xl font-bold tracking-tight">
           Projects
         </h2>
