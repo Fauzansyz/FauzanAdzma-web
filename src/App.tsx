@@ -7,6 +7,7 @@ import SkillStack from '@/components/SkillStack'
 import JourneyPage from '@/components/JourneyPage'
 import AboutPage from '@/components/AboutPage'
 import ContactSection from './components/ContactSection'
+import Footer from '@/components/Footer'
 
 function App() {
   const projectRef = useRef(null)
@@ -22,6 +23,7 @@ function App() {
         <JourneyPage />
         <Projects ref={projectRef} />
         <ContactSection />
+        <Footer />
       </div>
     </>
   )
