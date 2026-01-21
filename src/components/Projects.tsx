@@ -14,18 +14,18 @@ const projects = [
     demo: "https://portfolio.vercel.app",
   },
   {
-    title: "LoginUI",
+    title: "Wthr.io",
     description:
-      "Simple yet clean login app page with kotlin and material 3 and modern UI.",
-    tech: ["Kotlin", "xml", "material 3"],
-    github: "https://github.com/username/todo-app",
+      "View real-time and accurate weather conditions and easy to use anytime",
+    tech: ["Kotlin", "Mobile dev", "Material 3"],
+    github: "https://github.com/Fauzansyz/Wthr.io-repo",
   },
   {
-    title: "Dashboard UI",
+    title: "Tiktokly",
     description:
-      "Responsive dashboard layout with reusable components.",
-    tech: ["React", "shadcn/ui", "Tailwind"],
-    github: "https://github.com/username/dashboard-ui",
+      "Application to download videos from your social media quickly and efficiently and easy to use ",
+    tech: ["Kotlin", "Material 3", "Mobile dev"],
+    github: "https://github.com/Fauzansyz/Tiktokly",
   },
 ]
 
