@@ -30,7 +30,7 @@ const projects = [
   },
 ]
 
-const Projects = forwardRef(function Projects(_, ref) {
+const Projects = forwardRef<HTMLElement>(function Projects(_, ref) {
 
   return (
     <section

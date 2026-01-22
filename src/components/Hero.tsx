@@ -3,7 +3,11 @@ import { Badge } from "@/components/ui/badge"
 
 import { Github } from "lucide-react"
 
-export default function Hero({ onScroll }) {
+type HeroSection = {
+  onScroll: () => void
+}
+
+export default function Hero({ onScroll }: HeroSection) {
 
   return (
     <section className="relative flex min-h-screen items-center justify-center px-4">

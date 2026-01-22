@@ -10,7 +10,7 @@ import ContactSection from './components/ContactSection'
 import Footer from '@/components/Footer'
 
 function App() {
-  const projectRef = useRef(null)
+  const projectRef = useRef<HTMLDivElement | null>(null)
   return (
     <>
       <Navbar onScroll={() => projectRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })} />

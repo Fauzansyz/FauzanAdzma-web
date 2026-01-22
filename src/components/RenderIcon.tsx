@@ -1,7 +1,13 @@
-export default function RenderIcon({ Icon, color }, index) {
+import type { IconType } from "react-icons"
+
+type RenderIconProps = {
+  Icon: IconType
+  color?: string
+}
+
+export default function RenderIcon({ Icon, color }: RenderIconProps) {
   return (
     <div
-      key={index}
       className="flex h-14 w-14 items-center justify-center
             rounded-2xl shadow-sm transition hover:scale-110"
     >

@@ -2,7 +2,11 @@
 import { Sheet } from "@/components/ui/sheet"
 import { ThemeToggle } from "@/components/ThemeToggle"
 
-export default function Navbar({ onScroll }) {
+type NavbarSection = {
+  onScroll: () => void
+}
+
+export default function Navbar({ onScroll }: NavbarSection) {
   return (
     <header className="fixed top-0 z-50 w-full border-b bg-background/80 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
