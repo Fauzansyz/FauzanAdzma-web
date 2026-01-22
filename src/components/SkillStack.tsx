@@ -12,7 +12,6 @@ import {
   SiKotlin,
   SiDart,
   SiAndroid,
-  SiFlutter,
   SiNextdotjs,
   SiCplusplus
 
