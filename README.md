@@ -1,4 +1,4 @@
-# 🌐 Personal Portfolio
+# 🌐 Zandeveloper ( Web )
 
 A personal portfolio website that documents my journey as a developer.  
 Built with simplicity, clarity, and continuous improvement in mind.
