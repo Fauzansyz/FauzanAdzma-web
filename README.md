@@ -50,13 +50,19 @@ src/
 ## 🚀 Getting Started
 
 clone this repository then run
+```
+```
 
-> npm run dev 
+```txt
+npm run dev
+```
 
-and
+and 
 
-> npm run build
+```txt
+npm run build 
 
 
+```
 ## 🙌 Acknowledgement
 Inspired by modern developer portfolios and built through hands-on learning.
