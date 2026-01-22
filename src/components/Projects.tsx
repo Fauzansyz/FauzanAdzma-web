@@ -11,7 +11,6 @@ const projects = [
       "Personal portfolio built with Vite, React, Tailwind CSS, and shadcn/ui.",
     tech: ["React", "Tailwind", "Vite"],
     github: "https://github.com/Fauzansyz/",
-    demo: "https://portfolio.vercel.app",
   },
   {
     title: "Wthr.io",
@@ -19,6 +18,7 @@ const projects = [
       "View real-time and accurate weather conditions and easy to use anytime",
     tech: ["Kotlin", "Mobile dev", "Material 3"],
     github: "https://github.com/Fauzansyz/Wthr.io-repo",
+    demo: "https://github.com/Fauzansyz/Wthr.io-repo/releases/latest"
   },
   {
     title: "Tiktokly",
@@ -26,6 +26,7 @@ const projects = [
       "Application to download videos from your social media quickly and efficiently and easy to use ",
     tech: ["Kotlin", "Material 3", "Mobile dev"],
     github: "https://github.com/Fauzansyz/Tiktokly",
+    demo: "https://github.com/Fauzansyz/Tiktokly/releases/latest"
   },
 ]
 
@@ -101,7 +102,7 @@ const Projects = forwardRef(function Projects(_, ref) {
                       target="_blank"
                     >
                       <ExternalLink className="mr-2 h-4 w-4" />
-                      Demo
+                      Download
                     </a>
                   </Button>
                 )}
