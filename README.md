@@ -50,14 +50,10 @@ src/
 ## 🚀 Getting Started
 
 clone this repository then run
-```
-```
 
 ```txt
 npm run dev
 ```
-
-and 
 
 ```txt
 npm run build 
