@@ -46,3 +46,17 @@ src/
 ├─ styles/
 └─ main.tsx
 ```
+
+## 🚀 Getting Started
+
+clone this repository then run
+
+> npm run dev 
+
+and
+
+> npm run build
+
+
+## 🙌 Acknowledgement
+Inspired by modern developer portfolios and built through hands-on learning.
