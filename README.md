@@ -56,9 +56,10 @@ npm run dev
 ```
 
 ```txt
-npm run build 
-
-
+npm run build
 ```
+
+--- 
+
 ## 🙌 Acknowledgement
 Inspired by modern developer portfolios and built through hands-on learning.
