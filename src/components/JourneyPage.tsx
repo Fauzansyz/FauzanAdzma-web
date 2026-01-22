@@ -70,20 +70,20 @@ export default function JourneyPage() {
         />
 
         {journeys.map((item, index) => {
-          const start = index / journeys.length
-          const end = (index + 1) / journeys.length
+          {/* const start = index / journeys.length
+          const end = (index + 1) / journeys.length */ }
 
-          const glow = useTransform(
+          {/* const glow = useTransform(
             scrollYProgress,
             [start, end],
             [0, 1]
 
-          )
+          ) */}
 
-          const glowShadow = useTransform(
+          {/*  const glowShadow = useTransform(
             glow,
             (v) => `0 0 ${v * 20}px rgba(24,24,27,0.6)`
-          )
+          ) */}
 
           return (
             <div
