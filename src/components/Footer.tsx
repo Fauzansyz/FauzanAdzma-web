@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-10 flex flex-col gap-4
                                 sm:flex-row sm:items-center sm:justify-between md:px-8">
         {/* Left */}
-        <p className="text-sm text-zinc-500">
+        <p className="text-sm text-center text-zinc-500">
           © {new Date().getFullYear()} Fauzan adzma.
         </p>
 
