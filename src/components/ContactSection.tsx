@@ -2,7 +2,7 @@ import { Mail, Github, Instagram } from "lucide-react"
 
 export default function ContactSection() {
   return (
-    <section className="mx-auto max-w-3xl px-7 py-24">
+    <section className="mx-auto max-w-3xl px-9 py-22">
       <h2 className="text-3xl font-bold">Contact</h2>
 
       <p className="mt-3 text-zinc-600 dark:text-zinc-400">
