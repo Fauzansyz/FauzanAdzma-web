@@ -19,7 +19,7 @@ export default function Hero({ onScroll }: HeroSection) {
 
         </div>
 
-        <h1 className="mb-6 text-4xl font-[var(--font-fira)] font-bold tracking-tight sm:text-5xl">
+        <h1 className="mb-6 text-4xl font-[var(--font-oswald)] tracking-tight sm:text-5xl font-semibold">
           Hi, I'm Fauzan Adzma
         </h1>
 
