@@ -47,7 +47,7 @@ export default function SkillStack() {
   return (
     <section className="mx-auto max-w-4xl">
       <div className="mb-12 w-full flex justify-center">
-        <h2 className="text-3xl font-bold tracking-tight">
+        <h2 className="text-3xl font-semibold tracking-tight font-[var(--font-fira)]">
           My stack
         </h2>
       </div>
