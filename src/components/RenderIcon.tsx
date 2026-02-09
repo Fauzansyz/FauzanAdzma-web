@@ -1,9 +1,4 @@
-import type { IconType } from "react-icons"
-
-type RenderIconProps = {
-  Icon: IconType
-  color?: string
-}
+import type RenderIconProps from '../types/RenderIconProps'
 
 export default function RenderIcon({ Icon, color }: RenderIconProps) {
   return (

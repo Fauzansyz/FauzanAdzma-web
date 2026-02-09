@@ -6,7 +6,7 @@ import ProjectsSection from '@/components/ProjectsSection'
 import SkillStack from '@/components/SkillStack'
 import JourneySection from '@/components/JourneySection'
 import AboutSection from '@/components/AboutSection'
-import ContactSection from './components/ContactSection'
+import ContactSection from '@/components/ContactSection'
 import Footer from '@/components/Footer'
 
 function App() {
