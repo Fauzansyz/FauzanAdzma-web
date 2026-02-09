@@ -1,4 +1,4 @@
-export default function AboutPage() {
+export default function AboutSection() {
   return (
     <section className="mx-auto max-w-3xl px-2 md:px-1 py-24">
       <h2 className="text-3xl font-bold text-center">About me</h2>

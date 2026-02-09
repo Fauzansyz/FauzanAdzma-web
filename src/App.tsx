@@ -2,7 +2,7 @@ import './App.css'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import { useRef } from 'react'
-import Projects from '@/components/Projects'
+import ProjectsSection from '@/components/ProjectsSection'
 import SkillStack from '@/components/SkillStack'
 import JourneyPage from '@/components/JourneyPage'
 import AboutPage from '@/components/AboutPage'
@@ -21,7 +21,7 @@ function App() {
         </div>
         <AboutPage />
         <JourneyPage />
-        <Projects ref={projectRef} />
+        <ProjectsSection ref={projectRef} />
         <ContactSection />
         <Footer />
       </div>
