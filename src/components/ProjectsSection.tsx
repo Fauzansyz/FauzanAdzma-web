@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Github, ExternalLink } from "lucide-react"
 import { forwardRef } from "react"
+import { projectsList } from "@/data/ProjectList"
 
 const ProjectsSection = forwardRef<HTMLElement>(function Projects(_, ref) {
 
@@ -25,7 +26,7 @@ const ProjectsSection = forwardRef<HTMLElement>(function Projects(_, ref) {
 
       {/* Grid */}
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project) => (
+        {projectsList.map((project) => (
           <Card
             key={project.title}
             className="group flex h-full flex-col transition hover:shadow-lg"

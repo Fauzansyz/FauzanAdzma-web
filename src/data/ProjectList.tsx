@@ -1,6 +1,6 @@
 import type ProjectListTypes from "../types/ProjectListTypes"
 
-export const projects: ProjectListTypes[] = [
+export const projectsList: ProjectListTypes[] = [
   {
     title: "Portfolio Website",
     description:
