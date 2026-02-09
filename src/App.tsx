@@ -4,8 +4,8 @@ import Hero from '@/components/Hero'
 import { useRef } from 'react'
 import ProjectsSection from '@/components/ProjectsSection'
 import SkillStack from '@/components/SkillStack'
-import JourneyPage from '@/components/JourneyPage'
-import AboutPage from '@/components/AboutPage'
+import JourneySection from '@/components/JourneySection'
+import AboutSection from '@/components/AboutSection'
 import ContactSection from './components/ContactSection'
 import Footer from '@/components/Footer'
 
@@ -19,8 +19,8 @@ function App() {
         <div className='mx-auto max-w-6xl px-8 py-24'>
           <SkillStack />
         </div>
-        <AboutPage />
-        <JourneyPage />
+        <AboutSection />
+        <JourneySection />
         <ProjectsSection ref={projectRef} />
         <ContactSection />
         <Footer />

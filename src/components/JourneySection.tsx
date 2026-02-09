@@ -35,7 +35,7 @@ const journeys = [
   },
 ]
 
-export default function JourneyPage() {
+export default function JourneySection() {
   const ref = useRef(null)
 
   const { scrollYProgress } = useScroll({
