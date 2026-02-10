@@ -1,4 +1,4 @@
-import type RenderIconProps from '../types/RenderIconProps'
+import type { RenderIconProps } from '../types/RenderIconProps'
 
 export default function RenderIcon({ Icon, color }: RenderIconProps) {
   return (

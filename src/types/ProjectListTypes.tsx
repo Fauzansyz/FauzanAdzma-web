@@ -5,3 +5,4 @@ export interface ProjectListTypes {
   github: string
   demo?: string // opsional, karena gak semua project punya demo
 }
+

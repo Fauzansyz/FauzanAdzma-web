@@ -1,4 +1,4 @@
-import type ProjectListTypes from "../types/ProjectListTypes"
+import type { ProjectListTypes } from "../types/ProjectListTypes"
 
 export const projectsList: ProjectListTypes[] = [
   {
@@ -25,3 +25,5 @@ export const projectsList: ProjectListTypes[] = [
     demo: "https://github.com/Fauzansyz/Tiktokly/releases/latest"
   },
 ]
+
+export default projectsList;

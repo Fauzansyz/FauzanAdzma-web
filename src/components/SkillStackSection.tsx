@@ -1,6 +1,6 @@
 import Row from './Row'
 import RenderIcon from './RenderIcon'
-import { skillList } from '../data/SkillStackList'
+import skillList from '../data/SkillStackList'
 
 export default function SkillStackSection() {
   return (

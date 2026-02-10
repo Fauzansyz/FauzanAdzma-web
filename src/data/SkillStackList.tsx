@@ -1,4 +1,4 @@
-import type SkillStackTypes from "../types/SkillStackTypes"
+import type { SkillStackTypes } from "../types/SkillStackTypes"
 import {
   SiReact,
   SiJavascript,
@@ -42,4 +42,4 @@ export const skillList: SkillStackTypes[] = [
 
 ]
 
-
+export default skillList;
