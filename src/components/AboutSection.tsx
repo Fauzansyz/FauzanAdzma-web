@@ -15,9 +15,9 @@ export default function AboutSection() {
         <p className="text-center">
           I prefer to prioritize the functionality and scalability of applications that can be useful for the development of applications that I work on in the future. </p>
 
-        <p className="font-medium text-zinc-800 dark:text-zinc-200 text-center">
-          consistency is the key, because everything starts with determination and the will to do it.
-        </p>
+        <blockquote className="text-center mt-6 border-l-2 pl-6 italic">
+          &quot; consistency is the key, because everything starts with determination and the will to do it. &quot;
+        </blockquote>
       </div>
     </article>
   )
