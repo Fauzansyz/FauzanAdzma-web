@@ -1,7 +1,7 @@
 export default function AboutSection() {
   return (
-    <section className="mx-auto max-w-3xl px-2 md:px-1 py-24">
-      <h2 className="text-3xl font-bold text-center">About me</h2>
+    <article className="mx-auto max-w-3xl px-2 md:px-1 py-24 prose-zinc prose-headings:text-3xl prose-headings:font-bold lg:prose-xl prose-headings:text-center">
+      <h2>About me</h2>
 
       <div className="mt-6 px-5 md:px-2 space-y-5 text-zinc-600 dark:text-zinc-400 leading-relaxed">
         <p className="text-center">
@@ -15,10 +15,10 @@ export default function AboutSection() {
         <p className="text-center">
           I prefer to prioritize the functionality and scalability of applications that can be useful for the development of applications that I work on in the future. </p>
 
-        <p className="font-medium text-zinc-800 dark:text-zinc-200">
+        <p className="font-medium text-zinc-800 dark:text-zinc-200 text-center">
           consistency is the key, because everything starts with determination and the will to do it.
         </p>
       </div>
-    </section>
+    </article>
   )
 }
