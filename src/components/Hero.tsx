@@ -23,9 +23,9 @@ export default function Hero({ onScroll }: HeroSection) {
               Hi, I'm Fauzan Adzma
                   </h1>
 
-        <p className="mb-8 text-muted-foreground">
-          My focus In android and web application development
-        </p>
+        <p className="mb-8 leading-7 [&:not(:first-child)]:text-muted-foreground">
+              My focus In android and web application development
+                        </p>
 
         <div className="flex justify-center gap-4">
           <Button onClick={onScroll} size="lg">View projects</Button>
