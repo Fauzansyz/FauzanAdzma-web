@@ -18,10 +18,10 @@ export default function Hero({ onScroll }: HeroSection) {
           <Badge className="mb-4">Mobile Developer</Badge>
 
         </div>
-
-        <h1 className="mb-6 text-4xl font-[var(--font-oswald)] tracking-tight sm:text-5xl font-semibold">
-          Hi, I'm Fauzan Adzma
-        </h1>
+        
+        <h1 className="mb-6 scroll-m-20 text-center text-4xl font-extrabold tracking-tight text-balance">
+              Hi, I'm Fauzan Adzma
+                  </h1>
 
         <p className="mb-8 text-muted-foreground">
           My focus In android and web application development
