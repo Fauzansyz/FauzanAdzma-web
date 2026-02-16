@@ -6,7 +6,6 @@ import { Github } from "lucide-react"
 type HeroSection = {
   onScroll: () => void
 }
-
 export default function Hero({ onScroll }: HeroSection) {
 
   return (
