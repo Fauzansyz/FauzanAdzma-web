@@ -10,7 +10,7 @@ export default function Navbar({ onScroll }: NavbarSection) {
   return (
     <header className="fixed top-0 z-50 w-full border-b bg-background/80 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
-        <span className="text-lg font-semibold">Zandeveloper</span>
+        <img src="logo/res_assets_logo.png" className="w-12" />
 
         {/* Desktop */}
         <nav className="hidden gap-6 md:flex">
