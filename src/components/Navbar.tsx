@@ -1,16 +1,18 @@
 
 import { Sheet } from "@/components/ui/sheet"
 import { ThemeToggle } from "@/components/ThemeToggle"
+import { useTheme } from "next-themes"
 
 type NavbarSection = {
   onScroll: () => void
 }
 
 export default function Navbar({ onScroll }: NavbarSection) {
+  const { theme, setTheme } = useTheme()
   return (
     <header className="fixed top-0 z-50 w-full border-b bg-background/80 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
-        <img src="logo/res_assets_logo.png" className="w-12" />
+        <img src={theme === "dark" ? "/logo/res_assets_logo_dark.png" : "/logo/res_assets_logo_light.png"} className="w-20" />
 
         {/* Desktop */}
         <nav className="hidden gap-6 md:flex">
