@@ -129,3 +129,26 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes gradientMove {
+  0% {
+    background-position: center;
+  }
+
+  50% {
+    background-position: 60% 40%;
+  }
+
+  100% {
+    background-position: center;
+  }
+}
+
+.hero-gradient {
+  background: radial-gradient(circle at center,
+      rgba(59, 130, 246, 0.35),
+      rgba(15, 23, 42, 1) 50%);
+
+  filter: blur(40px);
+  animation: gradientMove 10s ease infinite;
+}

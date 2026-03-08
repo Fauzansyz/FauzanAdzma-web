@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-
 import { Github } from "lucide-react"
 
 type HeroSection = {
@@ -10,7 +9,9 @@ export default function Hero({ onScroll }: HeroSection) {
 
   return (
     <section className="relative flex min-h-screen items-center justify-center px-4">
-      <div className="max-w-3xl text-center">
+    <div className="hero-gradient absolute inset-0 rounded-full w-[600px] h-[600px]"></div>
+
+      <div className="relative z-10 max-w-3xl text-center">
         <div className="max-w-3xl flex gap-4 justify-center">
 
           <Badge className="mb-4">Web Developer</Badge>
