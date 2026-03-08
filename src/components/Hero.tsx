@@ -1,15 +1,16 @@
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Github } from "lucide-react"
+import { useTheme } from "next-themes"
 
 type HeroSection = {
   onScroll: () => void
 }
 export default function Hero({ onScroll }: HeroSection) {
-
+const { theme } = useTheme()
   return (
     <section className="relative flex min-h-screen items-center justify-center px-4">
-    <div className="hero-gradient absolute inset-0 rounded-full w-[600px] h-[600px]"></div>
+  <div className={`${theme=== "dark" ? "hero-gradient" : "hero-gradient-light"} absolute inset-0 p-20`}></div>
 
       <div className="relative z-10 max-w-3xl text-center">
         <div className="max-w-3xl flex gap-4 justify-center">

@@ -136,7 +136,7 @@
   }
 
   50% {
-    background-position: 60% 40%;
+    background-position: 55% 45%;
   }
 
   100% {
@@ -144,11 +144,22 @@
   }
 }
 
-.hero-gradient {
-  background: radial-gradient(circle at center,
-      rgba(59, 130, 246, 0.35),
-      rgba(15, 23, 42, 1) 50%);
+.hero-gradient-light {
+  background: radial-gradient(1400px circle at center,
+      rgba(59, 130, 246, 0.30) 0%,
+      rgba(59, 130, 246, 0.18) 30%,
+      rgba(255,255,255,0.15) 70%);
 
-  filter: blur(40px);
-  animation: gradientMove 10s ease infinite;
+  filter: blur(60px);
+  animation: gradientMove 12s ease infinite;
+}
+
+.hero-gradient {
+  background: radial-gradient(1400px circle at center,
+      rgba(59, 130, 246, 0.30) 0%,
+      rgba(59, 130, 246, 0.18) 30%,
+      rgba(2, 6, 23, 1) 70%);
+
+  filter: blur(60px);
+  animation: gradientMove 12s ease infinite;
 }

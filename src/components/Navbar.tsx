@@ -10,7 +10,7 @@ type NavbarSection = {
 export default function Navbar({ onScroll }: NavbarSection) {
   const { theme } = useTheme()
   return (
-    <header className="fixed top-0 z-50 w-full border-b bg-background/80 backdrop-blur">
+    <header className="fixed top-0 z-50 w-full bg-background/0 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
         <img src={theme === "dark" ? "/logo/res_assets_logo_dark.png" : "/logo/res_assets_logo_light.png"} className="w-20" />
 
