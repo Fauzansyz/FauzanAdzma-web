@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Github } from "lucide-react"
 import { useTheme } from "next-themes"
+import TextType from "./TextType"
 
 type HeroSection = {
   onScroll: () => void
@@ -20,8 +21,14 @@ const { theme } = useTheme()
 
         </div>
         
-        <h1 className="mb-6 scroll-m-20 text-center text-4xl lg:text-4xl md:text-6xl font-extrabold tracking-tight text-balance">
-              Hi, I'm Fauzan Adzma
+        <h1 className="mb-5 scroll-m-20 text-center text-4xl lg:text-4xl md:text-6xl font-extrabold tracking-tight text-balance">
+              Hi, I'm <TextType 
+              text={["Fauzan Adzma", "Zandeveloper"]}
+              typingSpeed={75}
+              loop={true}
+              showCursor={false}
+              startOnVisible={true}
+              />
                   </h1>
 
         <p className="mb-8 leading-7 [&:not(:first-child)]:text-muted-foreground">

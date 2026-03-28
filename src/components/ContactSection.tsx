@@ -1,16 +1,26 @@
 import { Mail, Github, Instagram } from "lucide-react"
 import { motion } from "framer-motion"
+import TextType from "./TextType"
 
 export default function ContactSection() {
   return (
     <motion.div 
     initial={{ opacity: 0, y: 100, filter:"blur(20px)" }}
     whileInView={{ opacity: 1, y: 0, filter:"blur(0px)" }}
-    viewport={{ once: true }}
+    viewport={{ once: false }}
     transition={{ duration: 0.5 }}
     >
     <section className="mx-auto max-w-3xl px-9 py-22">
-      <h2 className="text-3xl font-bold">Contact</h2>
+      <h2 className="text-3xl font-bold">
+      <TextType
+      text={["Contact"]}
+      typingSpeed={75}
+        pauseDuration={1500}
+        loop={false}
+        showCursor={false}
+        startOnVisible={true}
+      />
+      </h2>
 
       <p className="mt-3 text-zinc-600 dark:text-zinc-400">
         If you have any questions or would like to collaborate, please contact us on social media below.
