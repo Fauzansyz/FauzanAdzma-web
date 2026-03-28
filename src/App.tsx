@@ -8,6 +8,7 @@ import JourneySection from '@/components/JourneySection'
 import AboutSection from '@/components/AboutSection'
 import ContactSection from '@/components/ContactSection'
 import Footer from '@/components/Footer'
+import InteractiveGridBackground from './components/lightswind/interactive-grid-background'
 
 function App() {
   const projectRef = useRef<HTMLDivElement | null>(null)

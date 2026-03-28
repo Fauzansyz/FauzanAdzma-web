@@ -1,9 +1,17 @@
 import Row from './Row'
 import RenderIcon from './RenderIcon'
 import skillList from '../data/SkillStackList'
+import InteractiveGridBackground from './lightswind/interactive-grid-background'
+import { motion } from "framer-motion"
 
 export default function SkillStackSection() {
   return (
+    <>
+    <motion.div
+    initial={{ opacity: 0, y: 100, filter:"blur(20px)" }}
+    whileInView={{ opacity: 1, y: 0, filter:"blur(0px)" }}
+    viewport={{ once: false }}
+    transition={{ duration: 0.5 }}>
     <section className="mx-auto max-w-4xl">
       <div className="mb-12 w-full flex justify-center">
         <h2 className="text-3xl font-semibold tracking-tight font-[var(--font-fira)]">
@@ -30,9 +38,9 @@ export default function SkillStackSection() {
             color={item.color} />
         ))}
       </div>
-
     </section>
-
+    </motion.div>
+</>
   )
 
 }

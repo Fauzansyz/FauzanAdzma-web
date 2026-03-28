@@ -31,7 +31,7 @@ const ProjectsSection = forwardRef<HTMLElement>(function Projects(_, ref) {
           <motion.div
             initial={{ opacity: 0, y: 20, filter:"blur(20px)" }}
             whileInView={{ opacity: 1, y: 0, filter:"blur(0px)" }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 0.5 }}
             key={project.title}
           >

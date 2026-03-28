@@ -102,7 +102,7 @@ export default function JourneySection() {
               <motion.div
                 initial={{ opacity: 0, y: 40, filter:"blur(20px)" }}
                 whileInView={{ opacity: 1, y: 0, filter:"blur(0px)" }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
                 transition={{ duration: 0.5 }}
                 className="ml-10 md:ml-0 md:w-[calc(50%-3rem)] rounded-xl border border-zinc-200 bg-white p-5 shadow-sm dark:border-zinc-800 dark:bg-zinc-900"
               >
