@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Github, ExternalLink } from "lucide-react"
 import { forwardRef } from "react"
 import projectsList from "@/data/ProjectList"
+import { motion } from "framer-motion"
 
 const ProjectsSection = forwardRef<HTMLElement>(function Projects(_, ref) {
 
@@ -27,6 +28,13 @@ const ProjectsSection = forwardRef<HTMLElement>(function Projects(_, ref) {
       {/* Grid */}
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {projectsList.map((project) => (
+          <motion.div
+            initial={{ opacity: 0, y: 20, filter:"blur(20px)" }}
+            whileInView={{ opacity: 1, y: 0, filter:"blur(0px)" }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            key={project.title}
+          >
           <Card
             key={project.title}
             className="group flex h-full flex-col transition hover:shadow-lg"
@@ -84,6 +92,7 @@ const ProjectsSection = forwardRef<HTMLElement>(function Projects(_, ref) {
               </div>
             </CardContent>
           </Card>
+          </motion.div>
         ))}
       </div>
     </section>

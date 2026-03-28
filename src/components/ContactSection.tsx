@@ -1,7 +1,14 @@
 import { Mail, Github, Instagram } from "lucide-react"
+import { motion } from "framer-motion"
 
 export default function ContactSection() {
   return (
+    <motion.div 
+    initial={{ opacity: 0, y: 100, filter:"blur(20px)" }}
+    whileInView={{ opacity: 1, y: 0, filter:"blur(0px)" }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.5 }}
+    >
     <section className="mx-auto max-w-3xl px-9 py-22">
       <h2 className="text-3xl font-bold">Contact</h2>
 
@@ -49,5 +56,6 @@ export default function ContactSection() {
         The fastest response is usually via email
       </p>
     </section>
+    </motion.div>
   )
 }

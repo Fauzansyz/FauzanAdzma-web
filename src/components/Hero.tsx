@@ -20,7 +20,7 @@ const { theme } = useTheme()
 
         </div>
         
-        <h1 className="mb-6 scroll-m-20 text-center text-4xl font-extrabold tracking-tight text-balance">
+        <h1 className="mb-6 scroll-m-20 text-center text-4xl lg:text-4xl md:text-6xl font-extrabold tracking-tight text-balance">
               Hi, I'm Fauzan Adzma
                   </h1>
 
