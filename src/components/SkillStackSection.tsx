@@ -1,7 +1,7 @@
 import Row from './Row'
 import RenderIcon from './RenderIcon'
+import TextType from './TextType'
 import skillList from '../data/SkillStackList'
-import InteractiveGridBackground from './lightswind/interactive-grid-background'
 import { motion } from "framer-motion"
 
 export default function SkillStackSection() {
@@ -15,7 +15,14 @@ export default function SkillStackSection() {
     <section className="mx-auto max-w-4xl">
       <div className="mb-12 w-full flex justify-center">
         <h2 className="text-3xl font-semibold tracking-tight font-[var(--font-fira)]">
-          My stack
+          <TextType 
+          text={["My Stack"]}
+          typingSpeed={75}
+            pauseDuration={1500}
+            loop={false}
+            showCursor={false}
+            startOnVisible={true}
+          />
         </h2>
       </div>
 

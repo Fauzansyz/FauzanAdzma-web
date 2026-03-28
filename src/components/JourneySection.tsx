@@ -1,5 +1,6 @@
 import { useRef } from "react"
 import { useScroll, motion, useTransform } from "framer-motion"
+import TextType from "./TextType"
 
 const journeys = [
   {
@@ -52,7 +53,16 @@ export default function JourneySection() {
     >
       {/* Header */}
       <div className="mb-16 text-center">
-        <h2 className="text-3xl font-bold">Journey</h2>
+        <h2 className="text-3xl font-bold">
+      <TextType 
+      text={["Jurney"]}
+      typingSpeed={75}
+        pauseDuration={1500}
+        loop={false}
+        showCursor={false}
+        startOnVisible={true}
+      />
+        </h2>
         <p className="mt-2 text-muted-foreground">
           Slowly but surely
         </p>

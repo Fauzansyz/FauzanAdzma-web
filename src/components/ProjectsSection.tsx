@@ -5,6 +5,7 @@ import { Github, ExternalLink } from "lucide-react"
 import { forwardRef } from "react"
 import projectsList from "@/data/ProjectList"
 import { motion } from "framer-motion"
+import TextType from "./TextType"
 
 const ProjectsSection = forwardRef<HTMLElement>(function Projects(_, ref) {
 
@@ -18,7 +19,14 @@ const ProjectsSection = forwardRef<HTMLElement>(function Projects(_, ref) {
 
       <div className="mb-12 md:text-center md:w-full">
         <h2 className="text-3xl font-[var(--font-fira)] font-bold tracking-tight">
-          Projects
+      <TextType 
+      text={["Projects"]}
+      typingSpeed={75}
+        pauseDuration={1500}
+        loop={false}
+        showCursor={false}
+        startOnVisible={true}
+      />
         </h2>
         <p className="mt-2 text-muted-foreground">
           Some of the projects I have built that focus on performance and presenting UI/UX for users
