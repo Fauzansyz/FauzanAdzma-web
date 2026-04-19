@@ -24,6 +24,14 @@ export const projectsList: ProjectListTypes[] = [
     github: "https://github.com/Fauzansyz/Tiktokly",
     demo: "https://github.com/Fauzansyz/Tiktokly/releases/latest"
   },
+    {
+      title: "Zan.os",
+      description:
+        "Simple OS made with simple technology, only for simple implementation (learning)",
+      tech: ["Assembly", "C", "C++"],
+      github: "https://github.com/Fauzansyz/ZanOS",
+      demo: "https://github.com/Fauzansyz/ZanOS"
+    }
 ]
 
 export default projectsList;
