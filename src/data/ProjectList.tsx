@@ -31,7 +31,7 @@ export const projectsList: ProjectListTypes[] = [
       tech: ["Assembly", "C", "C++"],
       github: "https://github.com/Fauzansyz/ZanOS",
       demo: "https://github.com/Fauzansyz/ZanOS"
-    }
+    },
 ]
 
 export default projectsList;
