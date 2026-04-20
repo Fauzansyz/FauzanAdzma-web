@@ -4,6 +4,7 @@ import { Github } from "lucide-react"
 import { useTheme } from "next-themes"
 import TextType from "./TextType"
 
+
 type HeroSection = {
   onScroll: () => void
 }
