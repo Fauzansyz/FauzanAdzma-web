@@ -17,6 +17,7 @@ export default function Footer() {
         <div className="flex items-center justify-center gap-4 text-sm">
           <a
             href="https://github.com/Fauzansyz"
+            aria-label="Github link"
             target="_blank"
             className="text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition"
           >
@@ -24,6 +25,7 @@ export default function Footer() {
           </a>
           <a
             href="mailto:fauzanadzma2@gmail.com"
+            aria-label="Email link"
             className="text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition"
           >
             Email

@@ -34,8 +34,8 @@ export default function Hero({ onScroll }: HeroSection) {
         </p>
 
         <div className="flex justify-center gap-4">
-          <Button onClick={onScroll} size="lg">View projects</Button>
-          <Button variant="outline" size="lg">
+          <Button onClick={onScroll} size="lg" aria-label="List project">View projects</Button>
+          <Button variant="outline" size="lg" aria-label="Github account">
             <a href="https://github.com/Fauzansyz" target="_blank" >
               <Github className="mr-2 h-2 w-2" />
 
