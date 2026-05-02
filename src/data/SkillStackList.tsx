@@ -9,7 +9,7 @@ import {
   SiNodedotjs,
   SiGithub,
   SiHtml5,
-  SiCss3,
+  SiCss,
   SiKotlin,
   SiDart,
   SiAndroid,
@@ -32,7 +32,7 @@ export const skillList: SkillStackTypes[] = [
   { Icon: SiGithub, color: "currentColor" },
 
   { Icon: SiHtml5, color: "#E34F26" },
-  { Icon: SiCss3, color: "#1572B6" },
+  { Icon: SiCss, color: "#1572B6" },
   { Icon: SiKotlin, color: "#7F52FF" },
   { Icon: SiAndroid, color: "#3DDC84" },
   { Icon: SiDart, color: "#0175C2" },

@@ -1,9 +1,0 @@
-{
-  "file_explorer": {
-    "show_hidden": true
-  },
-  "editor": {
-    "use_terminal_bg": true,
-    "enable_semantic_tokens_full": true
-  }
-}
