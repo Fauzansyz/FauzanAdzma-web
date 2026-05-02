@@ -16,7 +16,7 @@ export default function Navbar({ onScroll }: NavbarSection) {
 
         {/* Desktop */}
         <nav className="hidden gap-6 md:flex">
-          <a onClick={onScroll} className="text-sm text-muted-foreground hover:text-foreground">Projects</a>
+          <a href="#projects" onClick={onScroll} className="text-sm text-muted-foreground hover:text-foreground">Projects</a>
           <a className="text-sm text-muted-foreground hover:text-foreground">Stack</a>
           <a href="#contact" className="text-sm text-muted-foreground hover:text-foreground">Contact</a>
         </nav>
