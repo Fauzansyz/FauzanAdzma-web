@@ -1,12 +1,7 @@
 export default function Hero() {
 	return (			
     <div className="min-h-screen relative overflow-hidden font-sans text-gray-800">
-      
-      {/* --- BACKGROUND DECORATION (Opsional, untuk efek lingkaran blur) --- */}
-      <div className="absolute top-20 left-1/4 w-32 h-32 bg-white rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
-      <div className="absolute bottom-10 left-1/3 w-40 h-40 bg-white rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
-
-
+    
       {/* --- HERO SECTION --- */}
       {/* flex-col untuk mobile, md:flex-row untuk desktop */}
       <main className="container mx-auto px-6 lg:px-16 flex flex-col md:flex-row items-center min-h-[calc(100vh-100px)] relative z-10">
