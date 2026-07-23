@@ -20,16 +20,7 @@ export default function Hero() {
             Software Developer
           </h2>
 
-          {/* Badge "Available for opportunities" (Hanya muncul di Mobile biar mirip screenshot) */}
-          <div className="flex md:hidden items-center gap-2 bg-white/60 backdrop-blur-sm border border-gray-200 rounded-full px-5 py-2 mt-8 shadow-sm">
-            <span className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></span>
-            <span className="text-sm font-semibold text-gray-800">Available for new opportunities</span>
-          </div>
-
-          <p className="hidden md:block text-[#475569] mt-6 max-w-md leading-relaxed">
-            I'm a developer focusing on Kotlin, React JS, Next.js, and building robust web and mobile applications.
-          </p>
-        </div>
+        
 
         {/* --- KOLOM GAMBAR (Di Mobile posisinya di tengah) --- */}
         <div className="w-full md:w-1/2 flex flex-col items-center relative mt-[-2rem] md:mt-0 z-10">
@@ -43,6 +34,18 @@ export default function Hero() {
           />
 
         </div>
+
+          {/* Badge "Available for opportunities" (Hanya muncul di Mobile biar mirip screenshot) */}
+          <div className="flex md:hidden items-center gap-2 bg-white/60 backdrop-blur-sm border border-gray-200 rounded-full px-5 py-2 mt-8 shadow-sm">
+            <span className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></span>
+            <span className="text-sm font-semibold text-gray-800">Available for new opportunities</span>
+          </div>
+
+          <p className="hidden md:block text-[#475569] mt-6 max-w-md leading-relaxed">
+            I'm a developer focusing on Kotlin, React JS, Next.js, and building robust web and mobile applications.
+          </p>
+        </div>
+      
         <div className="w-full md:hidden flex flex-col items-center mt-[-2rem] z-20 space-y-4 px-6">
 
           <p className="text-lg font-medium text-gray-800 mb-2">Software Developer</p>
