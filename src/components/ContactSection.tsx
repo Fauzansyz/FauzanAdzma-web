@@ -30,7 +30,7 @@ export default function ContactSection() {
       <div className="mt-8 flex flex-col gap-4 sm:flex-row">
         <button
           onClick={() => window.open('mailto:fauzanadzma2@gmail.com')}
-          className="w-90 flex items-center justify-center gap-2 rounded-xl bg-gray-900 px-5 py-3 text-gray-50 transition"
+          className="w-75 flex items-center justify-center gap-2 rounded-xl bg-gray-900 px-5 py-3 text-gray-50 transition"
         >
           <Mail size={18} />
           Email Me
@@ -38,7 +38,7 @@ export default function ContactSection() {
 
         <button
           onClick={() => window.open("https://github.com/Fauzansyz")}
-          className="w-90 flex items-center justify-center gap-2 rounded-xl
+          className="w-75 flex items-center justify-center gap-2 rounded-xl
                                border border-gray-700 px-5 py-3 transition"
         >
           <Github size={18} />
@@ -47,7 +47,7 @@ export default function ContactSection() {
 
         <button
           onClick={() => window.open("https://www.instagram.com/coding_ngin")}
-          className="w-90 flex items-center justify-center gap-2 rounded-xl
+          className="w-75 flex items-center justify-center gap-2 rounded-xl
                                border border-gray-900 px-5 py-3 transition"
         >
           <Instagram size={18} />
