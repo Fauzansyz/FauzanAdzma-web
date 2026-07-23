@@ -26,7 +26,7 @@ export default function Hero() {
         <div className="w-full md:w-1/2 relative flex justify-center items-end order-2 md:order-2 z-20">
           <img
             src="https://res.cloudinary.com/duwfnftsl/image/upload/v1784808421/1000315526-removebg-preview_zurbcq.png"
-            alt="Fauzan Profile"            className="w-72 z-20 mb-[5rem] md:w-96 h-auto object-cover drop-shadow-xl [-webkit-mask-image:linear-gradient(to_bottom,black_60%,transparent_100%)] [mask-image:linear-gradient(to_bottom,black_60%,transparent_100%)]"
+            alt="Fauzan Profile"            className="w-72 z-20 mb-[10rem] md:w-96 h-auto object-cover drop-shadow-xl [-webkit-mask-image:linear-gradient(to_bottom,black_60%,transparent_100%)] [mask-image:linear-gradient(to_bottom,black_60%,transparent_100%)]"
           />
 
         </div>
