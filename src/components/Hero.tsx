@@ -9,8 +9,8 @@ export default function Hero() {
         {/* KOLOM KIRI (Teks) */}
         <div className="w-full md:w-1/2 mt-12 md:mt-0 flex flex-col justify-center">
           <div className="flex items-center space-x-4 mb-4">
-            <span className="w-8 h-[2px] bg-gray-400"></span>
-            <span className="uppercase text-gray-500 tracking-[0.2em] text-xs font-bold">Hello</span>
+            <span className="w-8 h-[2px] bg-gray-50"></span>
+            <span className="uppercase text-gray-50 tracking-[0.2em] text-xs font-bold">Hello</span>
           </div>
           
           <h1 className="text-5xl lg:text-7xl font-extrabold text-[#2d3036] leading-tight mt-2">
