@@ -2,7 +2,7 @@ export default function Hero() {
   return (
 
     // Background putih lembut (Slate White)
-    <div className="min-h-screen relative overflow-hidden flex flex-col items-center justify-center font-sans text-[#475569]">
+    <div className="min-h-screen relative overflow-hidden flex flex-col items-center justify-center font-sans bg-[#F8FAFC] text-[#475569]">
 
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[400px] rounded-[100%] blur-3xl opacity-80 -z-10"></div>
 
