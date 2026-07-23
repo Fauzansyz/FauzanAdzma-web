@@ -10,7 +10,7 @@ export default function SkillStackSection() {
     <motion.div
     initial={{ opacity: 0, y: 100, filter:"blur(20px)" }}
     whileInView={{ opacity: 1, y: 0, filter:"blur(0px)" }}
-    viewport={{ once: false }}
+    viewport={{ once: true }}
     transition={{ duration: 0.5 }}>
     <section className="mx-auto max-w-4xl">
       <div className="mb-12 w-full flex justify-center">
@@ -27,7 +27,7 @@ export default function SkillStackSection() {
       </div>
 
       {/* MOBILE */}
-      <div className="flex flex-col gap-6 md:hidden">
+      <div className="flex text-gray-900 flex-col gap-6 md:hidden">
         <Row items={skillList.slice(0, 4)} cols={4} />
         <Row items={skillList.slice(4, 7)} cols={3} />
         <Row items={skillList.slice(7, 11)} cols={4} />
