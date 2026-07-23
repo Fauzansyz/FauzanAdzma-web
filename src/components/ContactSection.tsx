@@ -39,8 +39,7 @@ export default function ContactSection() {
         <button
           onClick={() => window.open("https://github.com/Fauzansyz")}
           className="inline-flex items-center justify-center gap-2 rounded-xl
-                               border border-zinc-300 px-5 py-3 transition
-                               hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-800"
+                               border border-gray-700 px-5 py-3 transition"
         >
           <Github size={18} />
           GitHub
