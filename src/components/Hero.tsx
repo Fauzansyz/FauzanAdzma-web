@@ -46,7 +46,7 @@ export default function Hero() {
           <img 
             src="https://res.cloudinary.com/duwfnftsl/image/upload/v1784808421/1000315526-removebg-preview_zurbcq.png" 
             alt="Fauzan adzma" 
-            className="relative z-10 max-h-[70vh] object-contain drop-shadow-2xl"
+            className="relative z-10 max-h-[80vh] object-contain drop-shadow-2xl"
           />
 
           {/* Teks Scroll Down (Vertikal di ujung kanan layar) */}
