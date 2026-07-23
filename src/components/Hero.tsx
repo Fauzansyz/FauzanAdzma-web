@@ -2,9 +2,9 @@ export default function Hero() {
   return (
 
     // Background putih lembut (Slate White)
-    <div className="min-h-screen bg-[#F8FAFC] relative overflow-hidden flex flex-col items-center justify-center font-sans text-[#475569]">
+    <div className="min-h-screen relative overflow-hidden flex flex-col items-center justify-center font-sans text-[#475569]">
 
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[400px] bg-[#dcfce7] rounded-[100%] blur-3xl opacity-80 -z-10"></div>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[400px] rounded-[100%] blur-3xl opacity-80 -z-10"></div>
 
       <main className="container mx-auto px-4 py-12 flex flex-col md:flex-row items-center justify-center relative z-10 w-full max-w-5xl gap-10">
 
@@ -43,9 +43,6 @@ export default function Hero() {
           />
 
         </div>
-
-        {/* --- KOLOM TOMBOL (Di Mobile posisinya di bawah gambar) --- */}
-        {/* Kontainer ini sengaja dibuat agar di mobile rata tengah, di desktop ngikutin layout teks */}
         <div className="w-full md:hidden flex flex-col items-center mt-[-2rem] z-20 space-y-4 px-6">
 
           <p className="text-lg font-medium text-gray-800 mb-2">Software Developer</p>
