@@ -45,7 +45,7 @@ const ProjectsSection = forwardRef<HTMLElement>(function Projects(_, ref) {
           >
           <Card
             key={project.title}
-            className="group flex h-full flex-col transition hover:shadow-lg"
+            className="group flex h-full flex-col transition hover:shadow-lg bg-gray-900"
           >
             <CardHeader>
               <CardTitle className="text-lg">

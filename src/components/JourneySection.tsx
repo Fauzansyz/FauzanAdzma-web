@@ -114,7 +114,7 @@ export default function JourneySection() {
                 whileInView={{ opacity: 1, y: 0, filter:"blur(0px)" }}
                 viewport={{ once: false }}
                 transition={{ duration: 0.5 }}
-                className="ml-10 md:ml-0 md:w-[calc(50%-3rem)] rounded-xl border border-zinc-200 bg-white p-5 shadow-sm dark:border-zinc-800 dark:bg-zinc-900"
+                className="ml-10 md:ml-0 md:w-[calc(50%-3rem)] rounded-xl border border-zinc-200 bg-gray-900 p-5 shadow-sm dark:border-zinc-800 dark:bg-zinc-900"
               >
                 <span className="text-sm text-muted-foreground text-gray-300">
                   {item.year}
