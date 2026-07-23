@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="h-full w-full bg-[#F8FAFC]">
+      <div className="h-full w-full bg-[#F8FAFC] text-[#475569]">
         <Hero />
         <div className='mx-auto max-w-6xl px-8 py-24'>
           <SkillStackSection />
