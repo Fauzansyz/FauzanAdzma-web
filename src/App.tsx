@@ -7,8 +7,6 @@ import JourneySection from '@/components/JourneySection'
 import AboutSection from '@/components/AboutSection'
 import ContactSection from '@/components/ContactSection'
 import Footer from '@/components/Footer'
-import Navbar from './components/Navbar'
-
 
 function App() {
   const projectRef = useRef<HTMLDivElement | null>(null)
