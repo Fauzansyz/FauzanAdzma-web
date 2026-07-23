@@ -10,11 +10,14 @@ import Footer from '@/components/Footer'
 
 function App() {
   const projectRef = useRef<HTMLDivElement | null>(null)
+  const targetScroll = () =>{
+     projectRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }
   return (
     <>
       <Navbar />
       <div className="h-full w-full bg-[#F8FAFC]">
-        <Hero />
+        <Hero onScrollClick={targetScroll} />
         <div className='mx-auto max-w-6xl px-8 py-24'>
           <SkillStackSection />
         </div>
@@ -22,7 +25,7 @@ function App() {
         <AboutSection />
         <JourneySection />
         <ProjectsSection ref={projectRef} />
-        <ContactSection />
+        <ContactSection ref={projectRef} />
         <Footer />
         </div>
       </div>

@@ -2,9 +2,10 @@ import { Mail, Github, Instagram } from "lucide-react"
 import { motion } from "framer-motion"
 import TextType from "./TextType"
 
-export default function ContactSection() {
+export default function ContactSection({ref}:any){
   return (
-    <motion.div 
+    <motion.div
+      ref={ref}
     initial={{ opacity: 0, y: 100, filter:"blur(20px)" }}
     whileInView={{ opacity: 1, y: 0, filter:"blur(0px)" }}
     viewport={{ once: false }}

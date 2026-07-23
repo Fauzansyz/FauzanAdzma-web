@@ -1,4 +1,5 @@
-export default function Hero() {
+
+export default function Hero({onScrollClick}:{onScrollClick: () => void }) {
   return (
 
     // Background putih lembut (Slate White)
@@ -53,7 +54,7 @@ export default function Hero() {
           </button>
 
           {/* Tombol Solid (Get in touch) */}
-          <button className="w-full max-w-sm bg-gray-900 text-white font-semibold py-4 rounded-full flex items-center justify-center gap-2 hover:bg-gray-800 transition">
+          <button onClick={onScrollClick} className="w-full max-w-sm bg-gray-900 text-white font-semibold py-4 rounded-full flex items-center justify-center gap-2 hover:bg-gray-800 transition">
             Get in touch
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
           </button>
