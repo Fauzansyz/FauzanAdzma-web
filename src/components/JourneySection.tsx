@@ -105,7 +105,7 @@ export default function JourneySection() {
             >
               <motion.span
                 className="absolute left-5 md:left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2
-               h-3 w-3 rounded-full bg-red-500"
+               h-3 w-3 rounded-full bg-zinc-800"
               />
 
               {/* Card */}
