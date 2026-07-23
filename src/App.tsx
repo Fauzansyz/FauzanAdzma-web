@@ -1,4 +1,4 @@
-import Navbar from '@/components/Navbar'
+//import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import { useRef } from 'react'
 import ProjectsSection from '@/components/ProjectsSection'
@@ -13,7 +13,6 @@ function App() {
   const projectRef = useRef<HTMLDivElement | null>(null)
   return (
     <>
-      <Navbar/>
       <div className="h-full w-full">
         <Hero />
         <div className='mx-auto max-w-6xl px-8 py-24'>
