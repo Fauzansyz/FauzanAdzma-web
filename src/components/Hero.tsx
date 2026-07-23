@@ -1,68 +1,74 @@
 export default function Hero() {
-	return (			
-    <div className="min-h-screen relative overflow-hidden font-sans text-gray-800">
-      <main className="container mx-auto px-6 lg:px-16 flex flex-col md:flex-row items-center min-h-[calc(100vh-100px)] relative z-10 pt-10 md:pt-0">
-        
-        {/* KOLOM KIRI (Teks & Overlap Basis) */}
-        <div className="w-full md:w-1/2 flex flex-col justify-center order-2 md:order-1 relative">
-          
-          {/* Teks Sapaan */}
-          <div className="flex items-center space-x-4 mb-4 z-20">
-            <span className="w-8 h-[2px] bg-gray-400"></span>
-            <span className={`uppercase tracking-[0.2em] text-xs font-bold text-gray-50`}>Hello</span>
-          </div>
-          
-          {/* Teks Nama Utama (Overlap Area) */}
-          {/* Di mobile, teks ini harus bisa terbaca meski sedikit tertutup */}
-          <h1 className={`text-5xl lg:text-7xl font-extrabold leading-tight mt-2 z-10 text-gray-50`}>
-            I'm <span className="text-[#ff2b4a]">Fauzan</span> Adzma
+  return (
+
+    // Background putih lembut (Slate White)
+    <div className="min-h-screen bg-[#F8FAFC] relative overflow-hidden flex flex-col items-center justify-center font-sans text-[#475569]">
+
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[400px] bg-[#dcfce7] rounded-[100%] blur-3xl opacity-80 -z-10"></div>
+
+      <main className="container mx-auto px-4 py-12 flex flex-col md:flex-row items-center justify-center relative z-10 w-full max-w-5xl gap-10">
+
+        {/* --- KOLOM TEKS (Di Mobile posisinya di atas) --- */}
+        <div className="w-full md:w-1/2 flex flex-col items-center text-center md:items-start md:text-left z-20">
+
+          <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 tracking-tight">
+            Hi I'm <span className="text-gray-900">Jan</span>
           </h1>
-          
-          {/* Deskripsi Teks */}
-          <p className={`text-gray-50 mt-6 max-w-md text-sm leading-relaxed z-10`}>
-            This is Jems Kemerun, visual designer, Photographer, Web Developer and Creative Director located in United States, looking for working around the globe.
-          </p>
-          
-          {/* Tombol CV */}
-          <div className="mt-10 z-10">
-            <button className="bg-[#ff2b4a] hover:bg-red-600 text-white text-xs font-bold uppercase tracking-wider py-4 px-8 rounded shadow-lg shadow-red-500/30 transition-all duration-300">
-              Download CV
-            </button>
+
+          {/* Menggunakan font-serif dan italic untuk style jabatan */}
+          <h2 className="text-4xl md:text-5xl font-serif italic text-gray-800 mt-1 md:mt-2">
+            Software Developer
+          </h2>
+
+          {/* Badge "Available for opportunities" (Hanya muncul di Mobile biar mirip screenshot) */}
+          <div className="flex md:hidden items-center gap-2 bg-white/60 backdrop-blur-sm border border-gray-200 rounded-full px-5 py-2 mt-8 shadow-sm">
+            <span className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></span>
+            <span className="text-sm font-semibold text-gray-800">Available for new opportunities</span>
           </div>
 
-          {/* Social Icons (Desktop: Bawah, Mobile: Bawah) */}
-          <div className="flex space-x-6 mt-16 lg:mt-24 text-gray-400 z-10">
-            <span className="cursor-pointer hover:text-red-500 transition">IG</span>
-            <span className="cursor-pointer hover:text-red-500 transition">TW</span>
-            <span className="cursor-pointer hover:text-red-500 transition">LI</span>
-          </div>
+          <p className="hidden md:block text-[#475569] mt-6 max-w-md leading-relaxed">
+            I'm a developer focusing on Kotlin, React JS, Next.js, and building robust web and mobile applications.
+          </p>
         </div>
 
-        {/* KOLOM KANAN (Gambar Overlapping) */}
-        {/* order-1 untuk mobile (pindah ke atas teks), order-2 untuk desktop */}
-        <div className="w-full md:w-1/2 relative mt-[-2rem] md:mt-0 flex justify-center items-end order-1 md:order-2 z-20">
-          
-          {/* Elemen Brush Stroke di belakang (Aman) */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-blue-100/40 rounded-full blur-3xl -z-10"></div>
-          
-          {/* Gambar Orang */}
-          {/* Gunakan mt-[-...rem] atau translate untuk efek overlap di mobile */}
-          {/* relative z-20 untuk menaikkan z-index di depan teks nama */}
-          <img 
-            src="https://res.cloudinary.com/duwfnftsl/image/upload/v1784808421/1000315526-removebg-preview_zurbcq.png" 
-            alt="Jems Kemerun Profile Overlap" 
-            className="relative z-20 max-h-[60vh] md:max-h-[70vh] object-contain drop-shadow-2xl md:mt-0 mt-[-6rem]" 
+        {/* --- KOLOM GAMBAR (Di Mobile posisinya di tengah) --- */}
+        <div className="w-full md:w-1/2 flex flex-col items-center relative mt-[-2rem] md:mt-0 z-10">
+
+          {/* GAMBAR DENGAN EFEK FADE OUT (Masking) */}
+          {/* Trik [-webkit-mask-image:...] ini yang bikin bagian bawah foto memudar secara transparan */}
+          <img
+            src="https://res.cloudinary.com/duwfnftsl/image/upload/v1784808421/1000315526-removebg-preview_zurbcq.png"
+            alt="Fauzan Profile"
+            className="w-72 md:w-96 h-auto object-cover drop-shadow-xl [-webkit-mask-image:linear-gradient(to_bottom,black_60%,transparent_100%)] [mask-image:linear-gradient(to_bottom,black_60%,transparent_100%)]"
           />
 
-          {/* Teks Scroll Down (Desktop Only) */}
-          <div className="hidden lg:flex absolute right-0 top-1/2 transform translate-x-16 rotate-90 origin-left items-center space-x-4 text-xs font-bold text-gray-400 tracking-widest uppercase">
-            <span>Scroll Down</span>
-            <span className="w-8 h-[2px] bg-gray-400"></span>
-          </div>
+        </div>
+
+        {/* --- KOLOM TOMBOL (Di Mobile posisinya di bawah gambar) --- */}
+        {/* Kontainer ini sengaja dibuat agar di mobile rata tengah, di desktop ngikutin layout teks */}
+        <div className="w-full md:hidden flex flex-col items-center mt-[-2rem] z-20 space-y-4 px-6">
+
+          <p className="text-lg font-medium text-gray-800 mb-2">Software Developer</p>
+
+          {/* Tombol Outline (Download CV) */}
+          <button className="w-full max-w-sm border-2 border-gray-800 text-gray-800 font-semibold py-4 rounded-full flex items-center justify-center gap-2 hover:bg-gray-100 transition">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+            Download CV
+          </button>
+
+          {/* Tombol Solid (Get in touch) */}
+          <button className="w-full max-w-sm bg-gray-900 text-white font-semibold py-4 rounded-full flex items-center justify-center gap-2 hover:bg-gray-800 transition">
+            Get in touch
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </button>
+
+          <p className="text-xs text-gray-500 mt-4 text-center">
+            Experienced in building & shipping applications.
+          </p>
 
         </div>
-      </main>
 
+      </main>
     </div>
-  	)
+      )
 }
