@@ -122,7 +122,7 @@ export default function JourneySection() {
                 <h3 className="mt-1 text-lg font-semibold text-gray-50">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm text-gray-200">
+                <p className="mt-2 text-sm text-gray-400">
                   {item.desc}
                 </p>
               </motion.div>
