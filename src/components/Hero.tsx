@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="w-full md:w-1/2 flex flex-col items-center text-center md:items-start md:text-left z-20">
 
           <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 tracking-tight">
-            Hi I'm <span className="text-gray-900">Fauzan</span>
+            Hi I'm <span className="text-gray-900">Fauzan </span>
           </h1>
 
           {/* Menggunakan font-serif dan italic untuk style jabatan */}
