@@ -13,13 +13,7 @@ export default function Hero({ onScroll }: HeroSection) {
 
 			<div className="relative z-10 max-w-3xl">
 				<h1 className="mb-5 scroll-m-20 text-center text-6xl lg:text-4xl md:text-6xl font-extrabold tracking-tight text-balance">
-					{S_H.a}<TextType
-						text={[`${S_H.n}`, `${S_H.p}`]}
-						typingSpeed={75}
-						showCursor={false}
-						startOnVisible={true}
-					/>
-				</h1>
+					{S_H.a} {S_H.n}, {S_H.p}</h1>
 
 				<div className="max-w-3xl flex gap-4 justify-center">
 
