@@ -23,7 +23,7 @@ export default function Hero() {
         
 
         {/* --- KOLOM GAMBAR (Di Mobile posisinya di tengah) --- */}
-        <div className="w-full md:w-1/2 flex flex-col items-center relative mt-[-1rem] md:mt-0 z-10">
+        <div className="w-full md:w-1/2 flex flex-col items-center relative mt-[-3rem] md:mt-0 z-10">
 
           {/* GAMBAR DENGAN EFEK FADE OUT (Masking) */}
           {/* Trik [-webkit-mask-image:...] ini yang bikin bagian bawah foto memudar secara transparan */}
