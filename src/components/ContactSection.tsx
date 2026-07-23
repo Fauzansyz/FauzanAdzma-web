@@ -31,8 +31,7 @@ export default function ContactSection() {
         <a
           href="mailto:fauzanadzma2@gmail.com"
           className="inline-flex items-center justify-center gap-2 rounded-xl
-                               bg-zinc-900 px-5 py-3 text-white transition
-                               hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900"
+                               bg-gray-900 px-5 py-3 text-gray-50 transition"
         >
           <Mail size={18} />
           Email Me
