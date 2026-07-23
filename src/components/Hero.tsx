@@ -23,7 +23,7 @@ export default function Hero() {
         
 
         {/* --- KOLOM GAMBAR (Di Mobile posisinya di tengah) --- */}
-        <div className="w-full md:w-1/2 relative flex justify-center items-end order-2 md:order-2 z-20">
+        <div className="w-full md:w-1/2 relative flex justify-center items-end order-1 md:order-2 z-20">
           <img
             src="https://res.cloudinary.com/duwfnftsl/image/upload/v1784817270/1000315526-removebg-preview_wugikv.png"
             alt="Fauzan Profile"            className="w-72 z-20 mt-[-2rem] md:w-96 h-auto object-cover drop-shadow-xl [-webkit-mask-image:linear-gradient(to_bottom,black_60%,transparent_100%)] [mask-image:linear-gradient(to_bottom,black_60%,transparent_100%)]"
