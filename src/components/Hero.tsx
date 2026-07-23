@@ -36,17 +36,13 @@ export default function Hero() {
         </div>
 
         {/* KOLOM KANAN (Gambar & Dekorasi) */}
-        <div className="w-full md:w-1/2 relative mt-16 md:mt-0 flex justify-center items-end">
-          
-          {/* Elemen Brush Stroke di belakang (Bisa diganti SVG/PNG asli) */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-blue-100/40 rounded-full blur-3xl -z-10"></div>
-          
+        <div className="w-full md:w-1/2 relative mt-16 md:mt-0 flex justify-center items-end">          
           {/* Gambar Orang */}
           {/* Pastikan ganti '/path-to-your-image.png' dengan gambar asli yang sudah dipotong background-nya */}
           <img 
             src="https://res.cloudinary.com/duwfnftsl/image/upload/v1784808421/1000315526-removebg-preview_zurbcq.png" 
             alt="Fauzan adzma" 
-            className="relative z-10 max-h-[80vh] object-contain drop-shadow-2xl"
+            className="relative z-10 max-h-[90vh] object-contain drop-shadow-2xl"
           />
 
           {/* Teks Scroll Down (Vertikal di ujung kanan layar) */}
