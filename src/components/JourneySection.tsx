@@ -116,13 +116,13 @@ export default function JourneySection() {
                 transition={{ duration: 0.5 }}
                 className="ml-10 md:ml-0 md:w-[calc(50%-3rem)] rounded-xl border border-zinc-200 bg-white p-5 shadow-sm dark:border-zinc-800 dark:bg-zinc-900"
               >
-                <span className="text-sm text-muted-foreground">
+                <span className="text-sm text-muted-foreground text-gray-300">
                   {item.year}
                 </span>
-                <h3 className="mt-1 text-lg font-semibold">
+                <h3 className="mt-1 text-lg font-semibold text-gray-50">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                <p className="mt-2 text-sm text-gray-200">
                   {item.desc}
                 </p>
               </motion.div>
