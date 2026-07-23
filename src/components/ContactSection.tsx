@@ -1,4 +1,4 @@
-import { Mail, Github, Instagram } from "lucide-react"
+import { Mail, Github, Instagram, LucideBluetoothConnected } from "lucide-react"
 import { motion } from "framer-motion"
 import TextType from "./TextType"
 
@@ -28,34 +28,32 @@ export default function ContactSection() {
 
       {/* Buttons */}
       <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-        <a
-          href="mailto:fauzanadzma2@gmail.com"
+        <button
+          onClick={() => window.open('mailto:fauzanadzma2@gmail.com')}
           className="inline-flex items-center justify-center gap-2 rounded-xl bg-gray-900 px-5 py-3 text-gray-50 transition"
         >
           <Mail size={18} />
           Email Me
-        </a>
+        </button>
 
-        <a
-          href="https://github.com/Fauzansyz"
-          target="_blank"
+        <button
+          onClick={() => window.open("https://github.com/Fauzansyz")}
           className="inline-flex items-center justify-center gap-2 rounded-xl
                                border border-zinc-300 px-5 py-3 transition
                                hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-800"
         >
           <Github size={18} />
           GitHub
-        </a>
+        </button>
 
-        <a
-          href="https://www.instagram.com/coding_ngin"
-          target="_blank"
+        <button
+          onClick={() => window.open("https://www.instagram.com/coding_ngin")}
           className="inline-flex items-center justify-center gap-2 rounded-xl
                                border border-gray-900 px-5 py-3 transition"
         >
           <Instagram size={18} />
           Instagram
-        </a>
+        </button>
       </div>
 
       {/* Footer note */}
