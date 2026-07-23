@@ -1,6 +1,4 @@
-import { useState } from "react";
 export default function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
       <nav className="container mx-auto px-6 py-6 lg:px-16 flex justify-between items-center relative z-20">
