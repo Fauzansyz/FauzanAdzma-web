@@ -71,7 +71,7 @@ export default function JourneySection() {
       <div className="relative space-y-20">
 
         {/* Timeline line (static) */}
-        <div className="absolute left-5 md:left-1/2 top-0 h-full w-px bg-red-500 dark:bg-zinc-800" />
+        <div className="absolute left-5 md:left-1/2 top-0 h-full w-px bg-zinc-800 dark:bg-zinc-800" />
 
         {/* Timeline line (animated) */}
         <motion.div
