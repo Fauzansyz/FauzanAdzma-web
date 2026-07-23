@@ -26,7 +26,7 @@ export default function Footer() {
           <a
             href="mailto:fauzanadzma2@gmail.com"
             aria-label="Email link"
-            className="text-gray-50 bg-gray-900 hover:text-zinc-900 dark:hover:text-zinc-100 transition"
+            className="text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition"
           >
             Email
           </a>
