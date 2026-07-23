@@ -7,12 +7,14 @@ import JourneySection from '@/components/JourneySection'
 import AboutSection from '@/components/AboutSection'
 import ContactSection from '@/components/ContactSection'
 import Footer from '@/components/Footer'
+import Navbar from './components/Navbar'
 
 
 function App() {
   const projectRef = useRef<HTMLDivElement | null>(null)
   return (
     <>
+      <Navbar />
       <div className="h-full w-full">
         <Hero />
         <div className='mx-auto max-w-6xl px-8 py-24'>
