@@ -71,12 +71,12 @@ export default function JourneySection() {
       <div className="relative space-y-20">
 
         {/* Timeline line (static) */}
-        <div className="absolute left-5 md:left-1/2 top-0 h-full w-px bg-zinc-800 dark:bg-zinc-800" />
+        <div className="absolute left-5 md:left-1/2 top-0 h-full w-px bg-zinc-200 dark:bg-zinc-800" />
 
         {/* Timeline line (animated) */}
         <motion.div
           style={{ height: lineHeight }}
-          className="absolute left-5 md:left-1/2 top-0 w-px origin-top bg-red-500 dark:bg-zinc-100"
+          className="absolute left-5 md:left-1/2 top-0 w-px origin-top bg-zinc-900 dark:bg-zinc-100"
         />
 
         {journeys.map((item, index) => {
@@ -105,7 +105,7 @@ export default function JourneySection() {
             >
               <motion.span
                 className="absolute left-5 md:left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2
-               h-3 w-3 rounded-full bg-zinc-900 dark:bg-zinc-100"
+               h-3 w-3 rounded-full bg-red-500 dark:bg-zinc-100"
               />
 
               {/* Card */}
