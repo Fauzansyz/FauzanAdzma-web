@@ -13,7 +13,7 @@ function App() {
   const projectRef = useRef<HTMLDivElement | null>(null)
   return (
     <>
-      <Navbar onScroll={() => projectRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })} />
+      <Navbar/>
       <div className="h-full w-full">
         <Hero />
         <div className='mx-auto max-w-6xl px-8 py-24'>
