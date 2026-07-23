@@ -13,16 +13,18 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="h-full w-full bg-[#F8FAFC] text-[#475569]">
+      <div className="h-full w-full bg-[#F8FAFC]">
         <Hero />
         <div className='mx-auto max-w-6xl px-8 py-24'>
           <SkillStackSection />
         </div>
+      <div className='text-gray-900'>
         <AboutSection />
         <JourneySection />
         <ProjectsSection ref={projectRef} />
         <ContactSection />
         <Footer />
+        </div>
       </div>
     </>
   )
