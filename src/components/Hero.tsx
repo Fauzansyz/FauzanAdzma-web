@@ -1,10 +1,6 @@
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { Github } from "lucide-react"
 import { useTheme } from "next-themes"
-import { S_H } from "@/constant/string"
-type HeroSection = { onScroll: () => void }
-export default function Hero({ onScroll }: HeroSection) {
+import { useState } from "react"; 
+export default function Hero() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const { theme } = useTheme()
 	return (

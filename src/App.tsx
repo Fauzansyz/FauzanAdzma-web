@@ -15,7 +15,7 @@ function App() {
     <>
       <Navbar onScroll={() => projectRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })} />
       <div className="h-full w-full">
-        <Hero onScroll={() => projectRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })} />
+        <Hero />
         <div className='mx-auto max-w-6xl px-8 py-24'>
           <SkillStackSection />
         </div>
