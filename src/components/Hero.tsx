@@ -13,8 +13,8 @@ export default function Hero() {
             <span className="uppercase text-gray-50 tracking-[0.2em] text-xs font-bold">Hello</span>
           </div>
           
-          <h1 className="text-5xl lg:text-7xl font-extrabold text-[#2d3036] leading-tight mt-2">
-            I'm <span className="text-[#ff2b4a]">Jems</span> Kemerun
+          <h1 className="text-5xl lg:text-7xl font-extrabold text-gray-50 leading-tight mt-2">
+            I'm <span className="text-[#ff2b4a]">Fauzan</span> Adzma
           </h1>
           
           <p className="text-gray-500 mt-6 max-w-md text-sm leading-relaxed">
@@ -44,8 +44,8 @@ export default function Hero() {
           {/* Gambar Orang */}
           {/* Pastikan ganti '/path-to-your-image.png' dengan gambar asli yang sudah dipotong background-nya */}
           <img 
-            src="/path-to-your-image.png" 
-            alt="Jems Kemerun Profile" 
+            src="https://res.cloudinary.com/duwfnftsl/image/upload/v1784808421/1000315526-removebg-preview_zurbcq.png" 
+            alt="Fauzan adzma" 
             className="relative z-10 max-h-[70vh] object-contain drop-shadow-2xl"
           />
 
