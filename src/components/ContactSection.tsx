@@ -1,4 +1,4 @@
-import { Mail, Github, Instagram, LucideBluetoothConnected } from "lucide-react"
+import { Mail, Github, Instagram } from "lucide-react"
 import { motion } from "framer-motion"
 import TextType from "./TextType"
 
