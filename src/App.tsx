@@ -24,7 +24,7 @@ function App() {
       <div className='text-gray-900'>
         <AboutSection />
         <JourneySection />
-        <ProjectsSection ref={projectRef} />
+        <ProjectsSection/>
         <ContactSection ref={projectRef} />
         <Footer />
         </div>
