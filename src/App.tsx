@@ -11,7 +11,7 @@ import Footer from '@/components/Footer'
 function App() {
   const projectRef = useRef<HTMLDivElement | null>(null)
   const targetScroll = () =>{
-     projectRef.current?.scrollIntoView({ behavior: 'smooth' });
+     projectRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
   return (
     <>
