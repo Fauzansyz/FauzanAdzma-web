@@ -14,7 +14,7 @@ export default function SkillStackSection() {
     transition={{ duration: 0.5 }}>
     <section className="mx-auto max-w-4xl">
       <div className="mb-12 w-full flex justify-center">
-        <h2 className="text-3xl font-semibold tracking-tight font-[var(--font-fira)]">
+        <h2 className="text-3xl font-semibold tracking-tight text-gray-900 font-[var(--font-fira)]">
           <TextType 
           text={["My Stack"]}
           typingSpeed={75}
