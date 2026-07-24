@@ -26,7 +26,7 @@ function App() {
           <SkillStackSection />
         </div>
       <div className='text-gray-900'>
-        <AboutSection ref={projectRef} />
+        <AboutSection ref={aboutRef} />
         <JourneySection />
         <ProjectsSection/>
         <ContactSection ref={projectRef} />
