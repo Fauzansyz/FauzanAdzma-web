@@ -15,14 +15,14 @@ function App() {
   }
   return (
     <>
-      <Navbar />
+      <Navbar onScrollClick={targetScroll} />
       <div className="h-full w-full bg-[#F8FAFC]">
         <Hero onScrollClick={targetScroll} />
         <div className='mx-auto max-w-6xl px-8 py-24'>
           <SkillStackSection />
         </div>
       <div className='text-gray-900'>
-        <AboutSection />
+        <AboutSection ref={projectRef} />
         <JourneySection />
         <ProjectsSection/>
         <ContactSection ref={projectRef} />
