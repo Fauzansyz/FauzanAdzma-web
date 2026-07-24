@@ -11,7 +11,7 @@ export default function Hero({ onScrollClick }: { onScrollClick: () => void }) {
 
         <div className="w-full md:w-1/2 relative flex justify-center items-end mt-16 md:mt-0">
 
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-6 w-[120vw] md:w-[150%] bg-black py-4 z-0 shadow-2xl overflow-hidden flex">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-6 w-[120vw] md:w-[150%] bg-black py-4 z-0 shadow-2xl overflow-hidden flex md:left-10">
 
             {/* Konten teks yang berjalan (animate-marquee) */}
             <div className="flex whitespace-nowrap animate-marquee text-white font-bold text-sm md:text-lg tracking-[0.2em] uppercase">
