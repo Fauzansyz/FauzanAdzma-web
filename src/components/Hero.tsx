@@ -18,25 +18,29 @@ export default function Hero({ onScrollClick }: { onScrollClick: () => void }) {
 
               {/* Kelompok Teks 1 */}
               <div className="flex items-center space-x-6 px-4">
-                <span>Android & Flutter Engineer</span>
+                <span>Android</span>
                 <span className="text-[#818CF8]">â€¢</span>
-                <span>Kotlin</span>
+                <span>Rust</span>
                 <span className="text-[#818CF8]">â€¢</span>
                 <span>React JS</span>
                 <span className="text-[#818CF8]">â€¢</span>
                 <span>Next.js</span>
+                <span className="text-[#818CF8]">â€¢</span>
+                <span>Laravel</span>
                 <span className="text-[#818CF8]">â€¢</span>
               </div>
 
               {/* Kelompok Teks 2 (Duplikat persis kelompok 1 supaya looping nyambung) */}
               <div className="flex items-center space-x-6 px-4">
-                <span>Android & Flutter Engineer</span>
+                <span>Android</span>
                 <span className="text-[#818CF8]">â€¢</span>
-                <span>Kotlin</span>
+                <span>Rust</span>
                 <span className="text-[#818CF8]">â€¢</span>
                 <span>React JS</span>
                 <span className="text-[#818CF8]">â€¢</span>
                 <span>Next.js</span>
+                <span className="text-[#818CF8]">â€¢</span>
+                <span>Laravel</span>
                 <span className="text-[#818CF8]">â€¢</span>
               </div>
 
