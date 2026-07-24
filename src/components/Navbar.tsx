@@ -1,4 +1,4 @@
-export default function Navbar({onScrollClick}) {
+export default function Navbar({onScrollClick}:any) {
   return (
     <>
       <nav className="container mx-auto py-6 lg:px-16 flex items-center relative z-20">
