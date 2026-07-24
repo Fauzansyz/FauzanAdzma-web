@@ -5,6 +5,22 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  /* 1. Mendaftarkan class animasi baru (animate-marquee) */
+  --animate-marquee: marquee 20s linear infinite;
+
+  /* 2. Membuat keyframes untuk pergerakannya */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
+
 @theme inline {
   --font-oswald: "Oswald", sans-serif;
   --font-fira: "Fira Sans", sans-serif;
