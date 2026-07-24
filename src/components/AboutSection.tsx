@@ -7,7 +7,7 @@ export default function AboutSection() {
       <motion.div
         initial={{ opacity: 0, y: 100, filter: "blur(20px)" }}
         whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         transition={{ duration: 0.5 }}>
         <article className="mx-auto max-w-3xl px-2 md:px-1 py-24 prose-zinc prose-headings:text-3xl prose-headings:font-bold lg:prose-xl prose-headings:text-center">
           <h2>

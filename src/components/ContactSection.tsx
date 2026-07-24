@@ -8,7 +8,7 @@ export default function ContactSection({ref}:any){
       ref={ref}
     initial={{ opacity: 0, y: 100, filter:"blur(20px)" }}
     whileInView={{ opacity: 1, y: 0, filter:"blur(0px)" }}
-    viewport={{ once: false }}
+    viewport={{ once: true }}
     transition={{ duration: 0.5 }}
     >
     <section className="mx-auto max-w-3xl px-9 py-22">
