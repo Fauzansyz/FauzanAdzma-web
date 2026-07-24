@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
     <>
-      <nav className="container mx-auto py-6 lg:px-16 flex justify-between items-center relative z-20">
+      <nav className="container mx-auto py-6 lg:px-16 flex justify-between space-x-5 items-center relative z-20">
 
         <div className="flex justify-evenly text-xs font-semibold tracking-widest text-gray-500 uppercase">
           
