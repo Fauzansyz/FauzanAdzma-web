@@ -3,7 +3,7 @@ export default function Navbar() {
     <>
       <nav className="container mx-auto py-6 lg:px-16 flex items-center relative z-20">
 
-        <div className="flex justify-between text-xs font-semibold tracking-widest text-gray-500 uppercase">
+        <div className="flex justify-between space-x-5 text-xs font-semibold tracking-widest text-gray-500 uppercase">
           
           <a href="#portfolio" className="hover:text-red-500 transition">Portfolio</a>
           <a href="#home" className="text-red-500">Home</a>
