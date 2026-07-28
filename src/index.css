@@ -138,10 +138,18 @@
     @apply border-border outline-ring/50;
   }
 
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
+    width: 100%;
   }
 }
+
 
 @keyframes gradientMove {
   0% {
