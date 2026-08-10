@@ -43,7 +43,14 @@ function App() {
           <JourneySection ref={journeyRef} />
           <ProjectsSection ref={projectsRef} />
           <ContactSection ref={contactRef} />
-          <Footer />
+          <Footer 
+            onScrollToHome={() => scrollTo(heroRef)}
+            onScrollToAbout={() => scrollTo(aboutRef)}
+            onScrollToSkills={() => scrollTo(skillsRef)}
+            onScrollToJourney={() => scrollTo(journeyRef)}
+            onScrollToProjects={() => scrollTo(projectsRef)}
+            onScrollToContact={() => scrollTo(contactRef)}
+          />
         </div>
       </div>
     </>
